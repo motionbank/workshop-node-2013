@@ -1,0 +1,431 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+   <PATCH nodename="C:\_dev\pluginJson\Json Parser_Motionbank.v4p" filename="C:\_dev\pluginJson\Json Parser_Motionbank.v4p" systemname="Json Parser_Motionbank" locked="0">
+   <BOUNDS height="12075" left="10590" top="1755" type="Window" width="18750">
+   </BOUNDS>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="14">
+   <BOUNDS type="Node" left="240" top="6855" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="240" top="6855" width="3015" height="3165">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1" slicecount="2" encoded="0" values="|Top Stories - Google News|,|Google News|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="1332" top="5055" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1332" top="5055" width="2355" height="810">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="3" encoded="0" values="total,events[0].event_type,events[1].happened_at">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2670" top="1125" width="9135" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2670" top="1125" width="5205" height="405">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="http://notimetofly.herokuapp.com/api/events.js">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE systemname="HTTP (Network Get String)" nodename="HTTP (Network Get)" componentmode="Hidden" id="93">
+   <BOUNDS type="Node" left="2565" top="3315" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="URL" visible="1">
+   </PIN>
+   <PIN pinname="Body" visible="1">
+   </PIN>
+   <PIN pinname="Status" visible="1">
+   </PIN>
+   <PIN pinname="Username" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Password" visible="1">
+   </PIN>
+   <PIN pinname="Refresh" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Header" visible="1">
+   </PIN>
+   <PIN pinname="Value" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Success" visible="1">
+   </PIN>
+   <PIN pinname="Name" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="|System Default|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="100">
+   <BOUNDS type="Node" left="5730" top="5295" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5730" top="5295" width="1725" height="360">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="created_at">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="JsonParser (JSON)" filename="plugins\StringJson\StringJson.csproj" nodename="JsonParser (JSON)" componentmode="Hidden" id="105">
+   <BOUNDS type="Node" left="3135" top="3930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JSON" visible="1" slicecount="2" encoded="0" values="hello">
+   </PIN>
+   <PIN pinname="Output json" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="JsonArray (JSON)" filename="plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="106">
+   <BOUNDS type="Node" left="4815" top="6120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Jobject" visible="1">
+   </PIN>
+   <PIN pinname="key" visible="1">
+   </PIN>
+   <PIN pinname="path" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="4815" top="6120">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Output json" dstnodeid="106" dstpinname="Jobject" linkstyle="Bezier">
+   <LINKPOINT x="3140" y="5158">
+   </LINKPOINT>
+   <LINKPOINT x="4870" y="5208">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Output String" dstnodeid="106" dstpinname="key">
+   </LINK>
+   <NODE systemname="SelectToken (JSON)" filename="plugins\StringJson\StringJson.csproj" nodename="SelectToken (JSON)" componentmode="Hidden" id="108">
+   <BOUNDS type="Node" left="240" top="6120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JObject" visible="1">
+   </PIN>
+   <PIN pinname="path" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="240" top="6120">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Output json" dstnodeid="108" dstpinname="JObject" linkstyle="Bezier">
+   <LINKPOINT x="3135" y="5145">
+   </LINKPOINT>
+   <LINKPOINT x="300" y="5145">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="108" dstpinname="path">
+   </LINK>
+   <LINK srcnodeid="108" srcpinname="Output" dstnodeid="14" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="93" srcpinname="Body" dstnodeid="105" dstpinname="JSON">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="117" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3054" top="1725" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3054" top="1725" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="Guest">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Username">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Output String" dstnodeid="93" dstpinname="Username">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="118" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3195" top="2265" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3195" top="2265" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="Guest">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Password">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Output String" dstnodeid="93" dstpinname="Password">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="119" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="4170" top="2865" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4170" top="2865" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Refresh">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Refresh">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="175" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6075" top="6354" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6075" top="6354" width="465" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="count">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="count" dstnodeid="175" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="5820" top="2070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="Y Output Value" dstnodeid="176" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="93" srcpinname="Success" dstnodeid="176" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6450" top="2565" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6450" top="2565" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="176" srcpinname="Inverse Output" dstnodeid="177" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="182">
+   <BOUNDS type="Node" left="5265" top="4155" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5265" top="4155" width="2295" height="315">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="events">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="JsonArray (JSON)" filename="plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="180">
+   <BOUNDS type="Node" left="8505" top="6120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Jobject" visible="1">
+   </PIN>
+   <PIN pinname="key" visible="1">
+   </PIN>
+   <PIN pinname="path" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="8505" top="6120">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Output json" dstnodeid="180" dstpinname="Jobject" linkstyle="Bezier">
+   <LINKPOINT x="4370" y="5133">
+   </LINKPOINT>
+   <LINKPOINT x="7330" y="5158">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="179" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8505" top="6855" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8505" top="6855" width="960" height="3840">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="178" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="9765" top="6339" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9765" top="6339" width="465" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="count">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="180" srcpinname="count" dstnodeid="178" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="183">
+   <BOUNDS type="Node" left="315" top="315" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="184" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="315" top="720" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="315" top="720" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="frames per second" dstnodeid="184" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="180" srcpinname="Output" dstnodeid="179" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="185" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4830" top="6855" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4830" top="6855" width="960" height="3840">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="16">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="Output" dstnodeid="185" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="186">
+   <BOUNDS type="Node" left="10200" top="7545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="scene">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="180" srcpinname="Output" dstnodeid="186" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="187">
+   <BOUNDS type="Node" left="10215" top="8010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="186" srcpinname="Output" dstnodeid="187" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="188" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="10230" top="8505" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10230" top="8505" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="187" srcpinname="Output" dstnodeid="188" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="182" srcpinname="Output String" dstnodeid="106" dstpinname="path">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="191" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2565" top="225" width="5115" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2565" top="225" width="6195" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="http://notimetofly.herokuapp.com/api/video/232/events/type/scene.js">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="191" srcpinname="Output String" dstnodeid="93" dstpinname="URL">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="192" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9435" top="4890" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9435" top="4890" width="1185" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="happened_at">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="182" srcpinname="Output String" dstnodeid="180" dstpinname="path">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Output String" dstnodeid="180" dstpinname="key">
+   </LINK>
+   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InABox" id="193">
+   <BOUNDS type="Node" left="13005" top="7770" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13005" top="7770" width="5295" height="3165">
+   </BOUNDS>
+   <BOUNDS type="Window" left="22560" top="10800" width="6240" height="5010">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
