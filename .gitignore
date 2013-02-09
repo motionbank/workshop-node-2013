@@ -5,3 +5,5 @@
 /response.json
 
 /subpatches/response.json
+
+*.xml
