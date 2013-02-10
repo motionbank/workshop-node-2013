@@ -13,17 +13,19 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="1" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="5820" top="5265" type="Node" width="0">
+   <BOUNDS height="0" left="5805" top="4305" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="240" left="5820" top="5265" type="Box" width="555">
+   <BOUNDS height="240" left="5805" top="4305" type="Box" width="555">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.01">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.007">
    </PIN>
    <PIN encoded="0" pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="thickness">
    </PIN>
    </NODE>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="2">
@@ -157,9 +159,9 @@
    <NODE id="14" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
-   <BOUNDS type="Box" left="1800" top="8015" width="750" height="240">
+   <BOUNDS type="Box" left="1785" top="8030" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1800" top="8015" width="750" height="240">
+   <BOUNDS type="Node" left="1785" top="8030" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -235,7 +237,7 @@
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Spline Count">
    </LINK>
    <NODE systemname="Linear-Spline PhongDirectional GPU (EX9.Effect)" filename="..\effects\Linear-Spline PhongDirectional GPU.fx" nodename="Linear-Spline PhongDirectional GPU (EX9.Effect)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="1785" top="7020" width="3375" height="270">
+   <BOUNDS type="Node" left="1770" top="7140" width="3375" height="270">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
@@ -245,9 +247,9 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Ambient Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Ambient Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|" visible="1">
    </PIN>
-   <PIN pinname="Diffuse Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Diffuse Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|" visible="1">
    </PIN>
    <PIN pinname="Specular Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
@@ -261,17 +263,17 @@
    <LINK srcnodeid="10" srcpinname="Texture Out" dstnodeid="18" dstpinname="Position Texture">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Size" linkstyle="Bezier">
-   <LINKPOINT x="3300" y="4823">
+   <LINKPOINT x="3295" y="4863">
    </LINKPOINT>
-   <LINKPOINT x="4140" y="4823">
+   <LINKPOINT x="4130" y="4903">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="18" srcpinname="Layer" dstnodeid="14" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="20" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="1365" top="6615" width="1350" height="270">
+   <BOUNDS type="Node" left="285" top="7035" width="1350" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1365" top="6615" width="1350" height="270">
+   <BOUNDS type="Box" left="285" top="7035" width="1350" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|woeis GPUSplines|">
    </PIN>
@@ -282,4 +284,22 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="21" systemname="IOBox (Color)">
+   <BOUNDS type="Node" left="2760" top="6585" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2760" top="6585" width="2235" height="240">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Color">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="18" dstpinname="Specular Color">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="18" dstpinname="Diffuse Color">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="18" dstpinname="Ambient Color">
+   </LINK>
    </PATCH>
