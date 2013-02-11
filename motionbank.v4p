@@ -121,7 +121,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6240" top="4185" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="6135" top="1890" width="4290" height="10440">
+   <BOUNDS type="Window" left="6135" top="1890" width="4140" height="10440">
    </BOUNDS>
    <PIN pinname="XYZ Out" visible="1">
    </PIN>
@@ -277,9 +277,9 @@
    </PIN>
    </NODE>
    <NODE systemname="time" filename="subpatches\time.v4p" nodename="subpatches\time.v4p" componentmode="Hidden" id="288">
-   <BOUNDS type="Node" left="7210" top="2050" width="0" height="0">
+   <BOUNDS type="Node" left="8290" top="1090" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5335" top="153" width="3750" height="3795">
+   <BOUNDS type="Box" left="6415" top="0" width="3750" height="3795">
    </BOUNDS>
    <BOUNDS type="Window" left="9810" top="4065" width="2475" height="3960">
    </BOUNDS>
@@ -321,9 +321,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="302" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="8895" top="4035" width="0" height="0">
+   <BOUNDS type="Node" left="8895" top="4635" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8895" top="4035" width="2985" height="255">
+   <BOUNDS type="Box" left="8895" top="4635" width="2985" height="255">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="videos\D02T02_Ros_sync_Center.mpg">
    </PIN>
@@ -355,9 +355,9 @@
    <LINK srcnodeid="196" srcpinname="Position" dstnodeid="303" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="304" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8145" top="3240" width="0" height="0">
+   <BOUNDS type="Node" left="8145" top="3840" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8145" top="3240" width="795" height="240">
+   <BOUNDS type="Box" left="8145" top="3840" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="40">
    </PIN>
@@ -371,9 +371,9 @@
    <LINK srcnodeid="304" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Time In">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="307" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7770" top="4020" width="0" height="0">
+   <BOUNDS type="Node" left="7770" top="4620" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7770" top="4020" width="285" height="240">
+   <BOUNDS type="Box" left="7770" top="4620" width="285" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -393,9 +393,9 @@
    <LINK srcnodeid="307" srcpinname="Y Output Value" dstnodeid="196" dstpinname="play">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="308" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8520" top="4020" width="0" height="0">
+   <BOUNDS type="Node" left="8520" top="4620" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8520" top="4020" width="285" height="240">
+   <BOUNDS type="Box" left="8520" top="4620" width="285" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -411,5 +411,61 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="308" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Do Seek">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="309" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6240" top="1830" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6240" top="1830" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="C:\vvvv\_dev\Motion-Bank-Node-Workshop\paths\Janine_D06T04_withBackgroundAdjustment_CorrectedTracked3DPosition.txt">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="309" srcpinname="Output String" dstnodeid="207" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="310" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6525" top="2430" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6525" top="2430" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Startindex">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="310" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Startindex">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="311" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6780" top="2985" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6780" top="2985" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Count">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="311" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Count">
    </LINK>
    </PATCH>
