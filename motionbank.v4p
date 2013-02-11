@@ -439,7 +439,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6435" top="2250" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="4096">
+   <PIN pinname="Y Input Value" slicecount="1" values="1024">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -473,7 +473,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6600" top="2775" width="1200" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4096">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
