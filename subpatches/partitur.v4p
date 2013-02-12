@@ -5,9 +5,9 @@
    </BOUNDS>
    <PIN pinname="Content" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="partitur\NTTF_nodes_3.xml">
+   <PIN pinname="Filename" slicecount="1" values="..\partitur\NTTF_nodes_3.xml">
    </PIN>
-   <PIN pinname="Read" slicecount="1" values="0" visible="1">
+   <PIN pinname="Read" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Element (XML Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XML Split)" componentmode="Hidden" id="1">
@@ -105,6 +105,8 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 1">
    </LINK>
@@ -200,6 +202,24 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="24" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4755" top="285" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4755" top="285" width="2745" height="3840">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="title">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="16">
    </PIN>
    </NODE>
    </PATCH>

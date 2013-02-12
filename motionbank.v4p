@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7005" top="5205" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="6990" top="2190" width="9810" height="8415">
+   <BOUNDS type="Window" left="5220" top="3240" width="9810" height="8415">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -51,9 +51,9 @@
    </PIN>
    </NODE>
    <NODE nodename="Group (EX9)" id="198" systemname="Group (EX9)">
-   <BOUNDS type="Node" left="3900" top="6210" width="6285" height="270">
+   <BOUNDS type="Node" left="3900" top="8910" width="6285" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3900" top="6210" width="2400" height="1800">
+   <BOUNDS type="Box" left="3900" top="8910" width="2400" height="1800">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -71,9 +71,9 @@
    </PIN>
    </NODE>
    <NODE nodename="Renderer (EX9)" componentmode="InAWindow" id="199" systemname="Renderer (EX9)">
-   <BOUNDS type="Node" left="3720" top="7845" width="0" height="0">
+   <BOUNDS type="Node" left="3720" top="10545" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3720" top="7845" width="2400" height="1800">
+   <BOUNDS type="Box" left="3720" top="10545" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="12180" top="0" width="9420" height="7050">
    </BOUNDS>
@@ -99,33 +99,37 @@
    </PIN>
    </NODE>
    <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="200" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="4065" top="6780" width="100" height="100">
+   <BOUNDS type="Node" left="4065" top="9480" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="jsonAPI" filename="subpatches\jsonAPI.v4p" nodename="subpatches\jsonAPI.v4p" componentmode="Hidden" id="206">
-   <BOUNDS type="Node" left="3765" top="2445" width="0" height="0">
+   <NODE systemname="JsonScene" filename="subpatches\JsonScene.v4p" nodename="subpatches\JsonScene.v4p" componentmode="Hidden" id="206">
+   <BOUNDS type="Node" left="3360" top="1740" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3765" top="2445" width="13230" height="5635">
+   <BOUNDS type="Box" left="3360" top="1740" width="13230" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="1215" top="1680" width="18840" height="11370">
+   <BOUNDS type="Window" left="4590" top="705" width="15105" height="11370">
    </BOUNDS>
    <PIN pinname="JSON" visible="1" slicecount="1" values="|{&quot;from&quot;:&quot;2011/04/18 09:13:21 +0000&quot;,&quot;to&quot;:&quot;2011/04/18 09:45:52 +0000&quot;,&quot;total&quot;:26,&quot;events&quot;:[{&quot;created_at&quot;:&quot;2011/12/16 16:46:55 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:13:25 +0000&quot;,&quot;happened_at_float&quot;:1303118005000,&quot;highlighted&quot;:false,&quot;id&quot;:4323,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;fred + ginger&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/03/29 10:44:45 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:13:54 +0000&quot;,&quot;happened_at_float&quot;:1303118034000,&quot;highlighted&quot;:false,&quot;id&quot;:5073,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;the beginning&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:50 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/15 18:08:21 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:13:59 +0000&quot;,&quot;happened_at_float&quot;:1303118039000,&quot;highlighted&quot;:false,&quot;id&quot;:4296,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;curved path&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/15 19:02:24 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:14:17 +0000&quot;,&quot;happened_at_float&quot;:1303118057000,&quot;highlighted&quot;:false,&quot;id&quot;:4300,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;link to portal&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/03/29 12:31:35 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:14:45 +0000&quot;,&quot;happened_at_float&quot;:1303118085000,&quot;highlighted&quot;:false,&quot;id&quot;:5074,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;break cord and second beginning&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:50 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 18:04:39 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:14:52 +0000&quot;,&quot;happened_at_float&quot;:1303118092000,&quot;highlighted&quot;:false,&quot;id&quot;:4351,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;joy + sorrow&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 15:33:20 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:15:48 +0000&quot;,&quot;happened_at_float&quot;:1303118148000,&quot;highlighted&quot;:false,&quot;id&quot;:4234,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;wordless song&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 16:14:56 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:18:51 +0000&quot;,&quot;happened_at_float&quot;:1303118331023,&quot;highlighted&quot;:false,&quot;id&quot;:4236,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;hidden diagonal&quot;,&quot;updated_at&quot;:&quot;2012/10/17 12:42:35 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 16:16:08 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:19:58 +0000&quot;,&quot;happened_at_float&quot;:1303118398000,&quot;highlighted&quot;:false,&quot;id&quot;:4237,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;1 minute turn&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 16:18:31 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:21:00 +0000&quot;,&quot;happened_at_float&quot;:1303118460189,&quot;highlighted&quot;:false,&quot;id&quot;:4238,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;work&quot;,&quot;updated_at&quot;:&quot;2012/10/17 12:44:36 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:02:13 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:22:53 +0000&quot;,&quot;happened_at_float&quot;:1303118573157,&quot;highlighted&quot;:false,&quot;id&quot;:4311,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;complexity&quot;,&quot;updated_at&quot;:&quot;2012/11/03 11:45:42 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/05/10 14:10:10 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:24:17 +0000&quot;,&quot;happened_at_float&quot;:1303118657224,&quot;highlighted&quot;:false,&quot;id&quot;:13337,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;mall + object&quot;,&quot;updated_at&quot;:&quot;2012/11/03 11:49:46 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:28:09 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:26:38 +0000&quot;,&quot;happened_at_float&quot;:1303118798000,&quot;highlighted&quot;:false,&quot;id&quot;:4319,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;particle&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/04/30 17:25:48 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:27:28 +0000&quot;,&quot;happened_at_float&quot;:1303118848000,&quot;highlighted&quot;:false,&quot;id&quot;:12630,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;holy + indian&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:10 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:48:24 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:31:39 +0000&quot;,&quot;happened_at_float&quot;:1303119099000,&quot;highlighted&quot;:false,&quot;id&quot;:4324,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;tiptoeing&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/24 11:58:29 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:32:45 +0000&quot;,&quot;happened_at_float&quot;:1303119165000,&quot;highlighted&quot;:false,&quot;id&quot;:4247,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;beckett quote&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:52:07 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:33:01 +0000&quot;,&quot;happened_at_float&quot;:1303119181000,&quot;highlighted&quot;:false,&quot;id&quot;:4327,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;silly song and dance&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/05/10 14:13:20 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:35:32 +0000&quot;,&quot;happened_at_float&quot;:1303119332000,&quot;highlighted&quot;:false,&quot;id&quot;:13340,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;market + traditional object&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:16 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/04/03 17:05:31 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;?&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:38:40 +0000&quot;,&quot;happened_at_float&quot;:1303119520000,&quot;highlighted&quot;:false,&quot;id&quot;:12187,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;counterintuitive travel&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:06 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:00:09 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:39:17 +0000&quot;,&quot;happened_at_float&quot;:1303119557000,&quot;highlighted&quot;:false,&quot;id&quot;:4331,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;mend&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:01:50 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:40:08 +0000&quot;,&quot;happened_at_float&quot;:1303119608091,&quot;highlighted&quot;:false,&quot;id&quot;:4332,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;road&quot;,&quot;updated_at&quot;:&quot;2012/11/02 07:37:07 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/04/30 17:30:56 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:41:43 +0000&quot;,&quot;happened_at_float&quot;:1303119703000,&quot;highlighted&quot;:false,&quot;id&quot;:12633,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;holy site + song&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:12 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:10:07 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:44:40 +0000&quot;,&quot;happened_at_float&quot;:1303119880000,&quot;highlighted&quot;:false,&quot;id&quot;:4340,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;standing&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:10:41 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:45:02 +0000&quot;,&quot;happened_at_float&quot;:1303119902000,&quot;highlighted&quot;:false,&quot;id&quot;:4341,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;face audience&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:13:42 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:45:18 +0000&quot;,&quot;happened_at_float&quot;:1303119918000,&quot;highlighted&quot;:false,&quot;id&quot;:4342,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;joy + sorrow again&quot;,&quot;updated_at&quot;:&quot;2012/11/09 22:04:50 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:14:35 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:45:51 +0000&quot;,&quot;happened_at_float&quot;:1303119951000,&quot;highlighted&quot;:false,&quot;id&quot;:4343,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;end&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232}]}|">
    </PIN>
    <PIN pinname="Username" slicecount="1" values="Guest">
    </PIN>
+   <PIN pinname="title" visible="1">
+   </PIN>
+   <PIN pinname="MarkerTime" visible="1">
+   </PIN>
    </NODE>
-   <NODE systemname="path" filename="subpatches\path.v4p" componentmode="InAWindow" id="207" nodename="subpatches\path.v4p" debug="0">
+   <NODE systemname="path" filename="subpatches\path.v4p" componentmode="Hidden" id="207" nodename="subpatches\path.v4p" debug="0">
    <BOUNDS type="Node" left="6060" top="3300" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="6060" top="3300" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="3570" top="3210" width="7050" height="5850">
+   <BOUNDS type="Window" left="3570" top="3210" width="10020" height="8430">
    </BOUNDS>
    <PIN pinname="XYZ Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="C:\vvvv\_dev\Motion-Bank-Node-Workshop\paths\Janine_D06T04_withBackgroundAdjustment_CorrectedTracked3DPosition.txt">
+   <PIN pinname="Filename" slicecount="1" values="paths\Ros_D01T01_withBackgroundAdjustment_Corrected/Tracked3DPosition.txt" visible="1">
    </PIN>
    <PIN pinname="read" slicecount="1" values="0">
    </PIN>
@@ -133,9 +137,9 @@
    </PIN>
    </NODE>
    <NODE nodename="Group (EX9)" id="209" systemname="Group (EX9)">
-   <BOUNDS type="Node" left="3705" top="7395" width="0" height="0">
+   <BOUNDS type="Node" left="3705" top="10095" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3705" top="7395" width="2400" height="1800">
+   <BOUNDS type="Box" left="3705" top="10095" width="2400" height="1800">
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
@@ -151,7 +155,7 @@
    <LINK srcnodeid="209" srcpinname="Layer" dstnodeid="199" dstpinname="Layers">
    </LINK>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="210">
-   <BOUNDS type="Node" left="4695" top="7425" width="100" height="100">
+   <BOUNDS type="Node" left="4695" top="10125" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -169,7 +173,7 @@
    <LINK srcnodeid="210" srcpinname="Projection" dstnodeid="199" dstpinname="Projection">
    </LINK>
    <NODE systemname="AxisAndGrid (DX9)" filename="%VVVV%\lib\nodes\modules\EX9\AxisAndGrid (DX9).v4p" nodename="AxisAndGrid (DX9)" componentmode="Hidden" id="211" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="2610" top="6780" width="100" height="100">
+   <BOUNDS type="Node" left="2610" top="9480" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -257,9 +261,9 @@
    </PIN>
    </NODE>
    <NODE systemname="time" filename="subpatches\time.v4p" nodename="subpatches\time.v4p" componentmode="Hidden" id="288">
-   <BOUNDS type="Node" left="3760" top="2860" width="0" height="0">
+   <BOUNDS type="Node" left="9970" top="610" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1885" top="1770" width="3750" height="3795">
+   <BOUNDS type="Box" left="8095" top="105" width="3750" height="3795">
    </BOUNDS>
    <BOUNDS type="Window" left="9810" top="4065" width="2475" height="3960">
    </BOUNDS>
@@ -271,7 +275,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="289">
-   <BOUNDS type="Node" left="5460" top="7845" width="100" height="100">
+   <BOUNDS type="Node" left="5460" top="10545" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Aspect Width" visible="1">
    </PIN>
@@ -287,7 +291,7 @@
    <LINK srcnodeid="289" srcpinname="Transform Out" dstnodeid="199" dstpinname="Aspect Ratio">
    </LINK>
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="290">
-   <BOUNDS type="Node" left="5700" top="6990" width="100" height="100">
+   <BOUNDS type="Node" left="5700" top="9690" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -297,12 +301,14 @@
    <LINK srcnodeid="290" srcpinname="Output" dstnodeid="210" dstpinname="Initial Yaw">
    </LINK>
    <NODE systemname="partitur" filename="subpatches\partitur.v4p" nodename="subpatches\partitur.v4p" componentmode="Hidden" id="300">
-   <BOUNDS type="Node" left="3765" top="1935" width="0" height="0">
+   <BOUNDS type="Node" left="2805" top="2460" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3765" top="1935" width="4335" height="6570">
+   <BOUNDS type="Box" left="2805" top="2460" width="4335" height="6570">
    </BOUNDS>
    <BOUNDS type="Window" left="4515" top="825" width="11025" height="12000">
    </BOUNDS>
+   <PIN pinname="title" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="302" systemname="IOBox (String)">
    <BOUNDS type="Node" left="8895" top="4635" width="0" height="0">
@@ -343,7 +349,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8145" top="3840" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="40">
+   <PIN pinname="Y Input Value" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -393,35 +399,17 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Do Seek|">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="308" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Do Seek">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="309" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6060" top="1035" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6060" top="1035" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="C:\vvvv\_dev\Motion-Bank-Node-Workshop\paths\Janine_D06T04_withBackgroundAdjustment_CorrectedTracked3DPosition.txt">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="file.txt">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="309" srcpinname="Output String" dstnodeid="207" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="310" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="6225" top="1650" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="6225" top="1650" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="512">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -439,7 +427,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6435" top="2250" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1024">
+   <PIN pinname="Y Input Value" slicecount="1" values="1000">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -473,7 +461,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6600" top="2775" width="1200" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1024">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="995">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -490,6 +478,82 @@
    </LINK>
    <LINK srcnodeid="207" srcpinname="XYZ video" dstnodeid="196" dstpinname="Input - XYZ">
    </LINK>
-   <LINK srcnodeid="284" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 1">
+   <NODE systemname="JsonData" filename="subpatches\JsonData.v4p" nodename="subpatches\JsonData.v4p" componentmode="Hidden" id="314">
+   <BOUNDS type="Node" left="4920" top="930" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="795" top="525" width="15105" height="11370">
+   </BOUNDS>
+   <PIN pinname="pathFile" visible="1">
+   </PIN>
+   <PIN pinname="startTimePath" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="206" srcpinname="title" dstnodeid="300" dstpinname="title">
+   </LINK>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="319">
+   <BOUNDS type="Node" left="5040" top="2100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Folder" slicecount="1" values="CurrentPatch">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="318">
+   <BOUNDS type="Node" left="5055" top="2700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="paths\">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="319" srcpinname="Output" dstnodeid="318" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="314" srcpinname="pathFile" dstnodeid="318" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="318" srcpinname="Output" dstnodeid="207" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="320">
+   <BOUNDS type="Node" left="4365" top="2235" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="206" srcpinname="MarkerTime" dstnodeid="320" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="314" srcpinname="startTimePath" dstnodeid="320" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="321">
+   <BOUNDS type="Node" left="4350" top="2655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="1000">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="320" srcpinname="Output" dstnodeid="321" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="322" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="4350" top="3255" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4350" top="3255" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="timings">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="321" srcpinname="Output" dstnodeid="322" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
