@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\vvvv\_dev\Motion-Bank-Node-Workshop\subpatches\path.v4p" systemname="path" filename="C:\vvvv\_dev\Motion-Bank-Node-Workshop\subpatches\path.v4p">
-   <BOUNDS type="Window" left="3570" top="3210" width="10020" height="8430">
+   <BOUNDS type="Window" left="4335" top="2580" width="10020" height="8430">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2265" top="585" width="0" height="0">
@@ -207,7 +207,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5655" top="5130" width="5055" height="7360">
    </BOUNDS>
-   <BOUNDS type="Window" left="8115" top="3645" width="5055" height="7365">
+   <BOUNDS type="Window" left="3255" top="2760" width="5055" height="7365">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -339,5 +339,19 @@
    <LINK srcnodeid="58" srcpinname="Output" dstnodeid="42" dstpinname="Read">
    </LINK>
    <LINK srcnodeid="58" srcpinname="Output" dstnodeid="50" dstpinname="Set">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="8070" top="6150" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8070" top="6150" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|XYZ all|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="59" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

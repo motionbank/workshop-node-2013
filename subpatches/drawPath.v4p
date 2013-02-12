@@ -17,7 +17,7 @@
    </BOUNDS>
    <BOUNDS height="240" left="5025" top="4140" type="Box" width="555">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.01">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.004">
    </PIN>
    <PIN encoded="0" pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -265,7 +265,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1980" top="6420" width="2235" height="240">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" values="|0.10344,0.10344,0.10344,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
