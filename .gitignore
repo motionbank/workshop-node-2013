@@ -7,3 +7,5 @@
 /subpatches/response.json
 
 *.xml
+
+*.DS_Store

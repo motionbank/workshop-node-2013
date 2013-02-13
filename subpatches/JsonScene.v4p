@@ -48,20 +48,6 @@
    <PIN pinname="Output json" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="JsonArray (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="1200" top="8940" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="key" visible="1">
-   </PIN>
-   <PIN pinname="path" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="1200" top="8940">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="SelectToken (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="SelectToken (JSON)" componentmode="Hidden" id="5" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="11460" top="7410" width="100" height="100">
    </BOUNDS>
@@ -86,20 +72,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="JsonArray (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="4140" top="8940" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="key" visible="1">
-   </PIN>
-   <PIN pinname="path" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="4140" top="8940">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1215" top="10725" width="0" height="0">
    </BOUNDS>
@@ -113,7 +85,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="title">
    </PIN>
-   <PIN pinname="Input String" visible="1">
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="16">
    </PIN>
@@ -168,24 +140,6 @@
    </NODE>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Input String" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="4" dstpinname="path" linkstyle="Bezier">
-   <LINKPOINT x="5535" y="7785">
-   </LINKPOINT>
-   <LINKPOINT x="1725" y="7785">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="4" dstpinname="key">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="11" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="8" dstpinname="path" linkstyle="Bezier">
-   <LINKPOINT x="5535" y="7800">
-   </LINKPOINT>
-   <LINKPOINT x="4635" y="7800">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="8" dstpinname="key">
-   </LINK>
    <BOUNDS type="Window" left="4590" top="705" width="15105" height="11370">
    </BOUNDS>
    <NODE systemname="HTTP (Network Get String)" nodename="HTTP (Network Get)" componentmode="Hidden" id="22" filename="%VVVV%\lib\nodes\modules\Network\HTTP (Network Get String).v4p">
@@ -219,7 +173,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4350" top="2730" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -413,18 +367,6 @@
    <LINK srcnodeid="23" srcpinname="Output String" dstnodeid="26" dstpinname="key">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="25" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Output json" dstnodeid="4" dstpinname="Jobject" linkstyle="VHV">
-   <LINKPOINT x="2400" y="7115">
-   </LINKPOINT>
-   <LINKPOINT x="2610" y="7285">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Output json" dstnodeid="8" dstpinname="Jobject" linkstyle="VHV">
-   <LINKPOINT x="2400" y="7100">
-   </LINKPOINT>
-   <LINKPOINT x="5550" y="7270">
-   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output json" dstnodeid="26" dstpinname="Jobject" linkstyle="VHV">
    <LINKPOINT x="2400" y="7100">
@@ -647,13 +589,11 @@
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="85">
    <BOUNDS type="Node" left="4125" top="9975" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="85" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="87" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="4125" top="10710" width="0" height="0">
    </BOUNDS>
@@ -684,4 +624,48 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="JsonArray (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="91">
+   <BOUNDS type="Node" left="1200" top="8940" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1200" top="8940">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="91" dstpinname="path" linkstyle="Bezier">
+   <LINKPOINT x="5535" y="7785">
+   </LINKPOINT>
+   <LINKPOINT x="1725" y="7785">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="91" dstpinname="key">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="11" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output json" dstnodeid="91" dstpinname="Jobject" linkstyle="VHV">
+   <LINKPOINT x="2400" y="7115">
+   </LINKPOINT>
+   <LINKPOINT x="2610" y="7285">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="JsonArray (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="92">
+   <BOUNDS type="Node" left="4140" top="8940" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4140" top="8940">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="92" dstpinname="path" linkstyle="Bezier">
+   <LINKPOINT x="5535" y="7800">
+   </LINKPOINT>
+   <LINKPOINT x="4635" y="7800">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="92" dstpinname="key">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output json" dstnodeid="92" dstpinname="Jobject" linkstyle="VHV">
+   <LINKPOINT x="2400" y="7100">
+   </LINKPOINT>
+   <LINKPOINT x="5550" y="7270">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="85" dstpinname="Input">
+   </LINK>
    </PATCH>

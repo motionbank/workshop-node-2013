@@ -145,6 +145,8 @@
    </PIN>
    <PIN pinname="alpha" slicecount="1" values="-0.41">
    </PIN>
+   <PIN pinname="Technique Pass" slicecount="1" values="-4">
+   </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Mesh" dstnodeid="18" dstpinname="Mesh">
    </LINK>
@@ -169,7 +171,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3900" top="8010" width="2235" height="240">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" values="|0.10344,0.10344,0.10344,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" values="|0.41048,0.40127,0.40087,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -383,7 +385,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3315" top="225" width="960" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -431,7 +433,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5250" top="9330" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.5">
+   <PIN pinname="Y Input Value" slicecount="1" values="1.07">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -607,5 +609,19 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="2100" top="1980" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2100" top="1980" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="9.15">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Width">
    </LINK>
    </PATCH>

@@ -9,7 +9,7 @@
    </PIN>
    <PIN pinname="Transform" visible="1">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.37264,0.37264,0.37264,1.00000|">
+   <PIN pinname="Color" slicecount="1" values="|0.21691,0.21691,0.21691,1.00000|">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="1">
@@ -19,9 +19,15 @@
    </PIN>
    <PIN pinname="Pitch" slicecount="1" values="0.25">
    </PIN>
-   <PIN pinname="ScaleX" slicecount="1" values="2">
+   <PIN pinname="ScaleX" slicecount="1" values="12">
    </PIN>
-   <PIN pinname="ScaleY" slicecount="1" values="2">
+   <PIN pinname="ScaleY" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="TranslateX" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TranslateZ" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">

@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\vvvv\_dev\Motion-Bank-Node-Workshop\subpatches\path.v4p" systemname="path" filename="C:\vvvv\_dev\Motion-Bank-Node-Workshop\subpatches\path.v4p">
-   <BOUNDS type="Window" left="4335" top="2580" width="10020" height="8430">
+   <BOUNDS type="Window" left="1665" top="2910" width="13320" height="8430">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
    <BOUNDS type="Node" left="5655" top="375" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5655" top="375" width="2775" height="240">
+   <BOUNDS type="Box" left="5655" top="375" width="9705" height="420">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="..\paths\Ros_D01T01_withBackgroundAdjustment_Corrected/Tracked3DPosition.txt">
+   <PIN pinname="Input String" slicecount="1" values="..\paths\Ros_D02T02_withBackgroundAdjustment_Corrected\Tracked3DPosition_25fps.txt">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -75,9 +75,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8760" top="345" width="0" height="0">
+   <BOUNDS type="Node" left="8760" top="1740" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8760" top="345" width="795" height="240">
+   <BOUNDS type="Box" left="8760" top="1740" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="54">
    </PIN>
@@ -167,9 +167,9 @@
    <LINK srcnodeid="50" srcpinname="Output" dstnodeid="48" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Index" linkstyle="Bezier">
-   <LINKPOINT x="8760" y="3428">
+   <LINKPOINT x="8760" y="4358">
    </LINKPOINT>
-   <LINKPOINT x="6840" y="3428">
+   <LINKPOINT x="6840" y="3893">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="48" srcpinname="Output" dstnodeid="41" dstpinname="Y Input Value">

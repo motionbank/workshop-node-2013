@@ -295,7 +295,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="XYZ" slicecount="1" values="0.05">
+   <PIN pinname="XYZ" slicecount="1" values="0.13">
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Transform Out" dstnodeid="32" dstpinname="Transform In">
