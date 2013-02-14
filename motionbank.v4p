@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
    <PATCH nodename="C:\vvvv\_dev\Motion-Bank-Node-Workshop\motionbank.v4p" filename="C:\vvvv\_dev\Motion-Bank-Node-Workshop\motionbank.v4p" systemname="motionbank" locked="0">
-   <BOUNDS height="11235" left="0" top="0" type="Window" width="10155">
+   <BOUNDS height="11520" left="0" top="0" type="Window" width="11685">
    </BOUNDS>
    <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="183">
    <BOUNDS type="Node" left="420" top="3060" width="100" height="100">
@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8670" top="12795" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="810" top="2190" width="9810" height="8415">
+   <BOUNDS type="Window" left="8400" top="1200" width="9705" height="8820">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -79,7 +79,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5085" top="16335" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="7425" top="0" width="14175" height="12390">
+   <BOUNDS type="Window" left="11940" top="0" width="9660" height="9120">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -113,7 +113,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4875" top="7470" width="13230" height="5635">
    </BOUNDS>
-   <BOUNDS type="Window" left="4590" top="705" width="15105" height="11370">
+   <BOUNDS type="Window" left="255" top="465" width="15105" height="11370">
    </BOUNDS>
    <PIN pinname="JSON" visible="1" slicecount="1" values="|{&quot;from&quot;:&quot;2011/04/18 09:13:21 +0000&quot;,&quot;to&quot;:&quot;2011/04/18 09:45:52 +0000&quot;,&quot;total&quot;:26,&quot;events&quot;:[{&quot;created_at&quot;:&quot;2011/12/16 16:46:55 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:13:25 +0000&quot;,&quot;happened_at_float&quot;:1303118005000,&quot;highlighted&quot;:false,&quot;id&quot;:4323,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;fred + ginger&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/03/29 10:44:45 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:13:54 +0000&quot;,&quot;happened_at_float&quot;:1303118034000,&quot;highlighted&quot;:false,&quot;id&quot;:5073,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;the beginning&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:50 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/15 18:08:21 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:13:59 +0000&quot;,&quot;happened_at_float&quot;:1303118039000,&quot;highlighted&quot;:false,&quot;id&quot;:4296,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;curved path&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/15 19:02:24 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:14:17 +0000&quot;,&quot;happened_at_float&quot;:1303118057000,&quot;highlighted&quot;:false,&quot;id&quot;:4300,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;link to portal&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/03/29 12:31:35 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:14:45 +0000&quot;,&quot;happened_at_float&quot;:1303118085000,&quot;highlighted&quot;:false,&quot;id&quot;:5074,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;break cord and second beginning&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:50 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 18:04:39 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:14:52 +0000&quot;,&quot;happened_at_float&quot;:1303118092000,&quot;highlighted&quot;:false,&quot;id&quot;:4351,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;joy + sorrow&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 15:33:20 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:15:48 +0000&quot;,&quot;happened_at_float&quot;:1303118148000,&quot;highlighted&quot;:false,&quot;id&quot;:4234,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;wordless song&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 16:14:56 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:18:51 +0000&quot;,&quot;happened_at_float&quot;:1303118331023,&quot;highlighted&quot;:false,&quot;id&quot;:4236,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;hidden diagonal&quot;,&quot;updated_at&quot;:&quot;2012/10/17 12:42:35 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 16:16:08 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:19:58 +0000&quot;,&quot;happened_at_float&quot;:1303118398000,&quot;highlighted&quot;:false,&quot;id&quot;:4237,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;1 minute turn&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/23 16:18:31 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:21:00 +0000&quot;,&quot;happened_at_float&quot;:1303118460189,&quot;highlighted&quot;:false,&quot;id&quot;:4238,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;work&quot;,&quot;updated_at&quot;:&quot;2012/10/17 12:44:36 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:02:13 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:22:53 +0000&quot;,&quot;happened_at_float&quot;:1303118573157,&quot;highlighted&quot;:false,&quot;id&quot;:4311,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;complexity&quot;,&quot;updated_at&quot;:&quot;2012/11/03 11:45:42 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/05/10 14:10:10 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:24:17 +0000&quot;,&quot;happened_at_float&quot;:1303118657224,&quot;highlighted&quot;:false,&quot;id&quot;:13337,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;mall + object&quot;,&quot;updated_at&quot;:&quot;2012/11/03 11:49:46 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:28:09 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:26:38 +0000&quot;,&quot;happened_at_float&quot;:1303118798000,&quot;highlighted&quot;:false,&quot;id&quot;:4319,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;particle&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/04/30 17:25:48 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:27:28 +0000&quot;,&quot;happened_at_float&quot;:1303118848000,&quot;highlighted&quot;:false,&quot;id&quot;:12630,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;holy + indian&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:10 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:48:24 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:31:39 +0000&quot;,&quot;happened_at_float&quot;:1303119099000,&quot;highlighted&quot;:false,&quot;id&quot;:4324,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;tiptoeing&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/07/24 11:58:29 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:32:45 +0000&quot;,&quot;happened_at_float&quot;:1303119165000,&quot;highlighted&quot;:false,&quot;id&quot;:4247,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;beckett quote&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 16:52:07 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:33:01 +0000&quot;,&quot;happened_at_float&quot;:1303119181000,&quot;highlighted&quot;:false,&quot;id&quot;:4327,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;silly song and dance&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/05/10 14:13:20 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:35:32 +0000&quot;,&quot;happened_at_float&quot;:1303119332000,&quot;highlighted&quot;:false,&quot;id&quot;:13340,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;market + traditional object&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:16 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/04/03 17:05:31 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;?&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:38:40 +0000&quot;,&quot;happened_at_float&quot;:1303119520000,&quot;highlighted&quot;:false,&quot;id&quot;:12187,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;counterintuitive travel&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:06 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:00:09 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:39:17 +0000&quot;,&quot;happened_at_float&quot;:1303119557000,&quot;highlighted&quot;:false,&quot;id&quot;:4331,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;mend&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:01:50 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:40:08 +0000&quot;,&quot;happened_at_float&quot;:1303119608091,&quot;highlighted&quot;:false,&quot;id&quot;:4332,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;road&quot;,&quot;updated_at&quot;:&quot;2012/11/02 07:37:07 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2012/04/30 17:30:56 +0200&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:41:43 +0000&quot;,&quot;happened_at_float&quot;:1303119703000,&quot;highlighted&quot;:false,&quot;id&quot;:12633,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;holy site + song&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:28:12 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:10:07 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:44:40 +0000&quot;,&quot;happened_at_float&quot;:1303119880000,&quot;highlighted&quot;:false,&quot;id&quot;:4340,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;standing&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:10:41 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:45:02 +0000&quot;,&quot;happened_at_float&quot;:1303119902000,&quot;highlighted&quot;:false,&quot;id&quot;:4341,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;face audience&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:13:42 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:45:18 +0000&quot;,&quot;happened_at_float&quot;:1303119918000,&quot;highlighted&quot;:false,&quot;id&quot;:4342,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;joy + sorrow again&quot;,&quot;updated_at&quot;:&quot;2012/11/09 22:04:50 +0100&quot;,&quot;video_id&quot;:232},{&quot;created_at&quot;:&quot;2011/12/16 17:14:35 +0100&quot;,&quot;created_by&quot;:&quot;FlorianJenett2&quot;,&quot;description&quot;:&quot;&quot;,&quot;dur&quot;:0.0,&quot;duration&quot;:0.0,&quot;event_type&quot;:&quot;scene&quot;,&quot;happened_at&quot;:&quot;2011/04/18 09:45:51 +0000&quot;,&quot;happened_at_float&quot;:1303119951000,&quot;highlighted&quot;:false,&quot;id&quot;:4343,&quot;inherits_title&quot;:false,&quot;location&quot;:null,&quot;locked&quot;:&quot;none&quot;,&quot;modified_by&quot;:&quot;FlorianJenett2&quot;,&quot;parent_id&quot;:null,&quot;performers&quot;:[&quot;roswarby&quot;],&quot;piece_id&quot;:3,&quot;rating&quot;:0,&quot;state&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;end&quot;,&quot;updated_at&quot;:&quot;2012/09/12 11:27:44 +0200&quot;,&quot;video_id&quot;:232}]}|">
    </PIN>
@@ -129,9 +129,9 @@
    </PIN>
    </NODE>
    <NODE systemname="path" filename="subpatches\path.v4p" componentmode="Hidden" id="207" nodename="subpatches\path.v4p" debug="0">
-   <BOUNDS type="Node" left="6990" top="10095" width="1755" height="270">
+   <BOUNDS type="Node" left="6990" top="10200" width="1755" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6990" top="10095" width="4800" height="3600">
+   <BOUNDS type="Box" left="6990" top="10200" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="1665" top="2910" width="13320" height="8430">
    </BOUNDS>
@@ -167,17 +167,17 @@
    <LINK srcnodeid="209" srcpinname="Layer" dstnodeid="199" dstpinname="Layers">
    </LINK>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="210">
-   <BOUNDS type="Node" left="13650" top="14940" width="100" height="100">
+   <BOUNDS type="Node" left="13515" top="15390" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1">
    </PIN>
    <PIN pinname="Projection" visible="1">
    </PIN>
-   <PIN pinname="Inital Distance" slicecount="1" values="2.97">
+   <PIN pinname="Inital Distance" slicecount="1" values="9.53">
    </PIN>
-   <PIN pinname="Initial Pitch" slicecount="1" values="0.1">
+   <PIN pinname="Initial Pitch" slicecount="1" values="0.07">
    </PIN>
-   <PIN pinname="Initial Yaw" slicecount="1" visible="1" values="0.33176640016279">
+   <PIN pinname="Initial Yaw" slicecount="1" visible="1" values="0.31">
    </PIN>
    </NODE>
    <NODE systemname="AxisAndGrid (DX9)" filename="%VVVV%\lib\nodes\modules\EX9\AxisAndGrid (DX9).v4p" nodename="AxisAndGrid (DX9)" componentmode="Hidden" id="211" hiddenwhenlocked="1">
@@ -192,7 +192,7 @@
    </LINK>
    <LINK srcnodeid="211" srcpinname="Layer" dstnodeid="209" dstpinname="Layer 1" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="environment" filename="subpatches\environment.v4p" nodename="subpatches\environment.v4p" componentmode="InAWindow" id="284">
+   <NODE systemname="environment" filename="subpatches\environment.v4p" nodename="subpatches\environment.v4p" componentmode="Hidden" id="284">
    <BOUNDS type="Node" left="5295" top="13290" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="5295" top="13290" width="3250" height="3940">
@@ -301,7 +301,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10560" top="12225" width="2985" height="255">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="videos\final\D02T02_Ros_sync_Center.mp4">
+   <PIN pinname="Input String" slicecount="1" values="videos\final\D02T02_Ros_sync_Center.mp4" visible="1">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.avi">
    </PIN>
@@ -313,13 +313,15 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="302" srcpinname="Output String" dstnodeid="196" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="304" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="9645" top="11610" width="0" height="0">
+   <BOUNDS type="Node" left="9630" top="11610" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9645" top="11610" width="795" height="240">
+   <BOUNDS type="Box" left="9630" top="11610" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -339,7 +341,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9150" top="12210" width="285" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -351,7 +353,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="play">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="307" srcpinname="Y Output Value" dstnodeid="196" dstpinname="play">
@@ -379,11 +381,11 @@
    <LINK srcnodeid="308" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Do Seek">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="310" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8850" top="8535" width="0" height="0">
+   <BOUNDS type="Node" left="8835" top="8340" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8850" top="8535" width="795" height="240">
+   <BOUNDS type="Box" left="8835" top="8340" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="500" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="500">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -397,9 +399,9 @@
    <LINK srcnodeid="310" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Startindex">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="311" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8850" top="9015" width="0" height="0">
+   <BOUNDS type="Node" left="8835" top="8820" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8850" top="9015" width="795" height="240">
+   <BOUNDS type="Box" left="8835" top="8820" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="25">
    </PIN>
@@ -415,9 +417,9 @@
    <LINK srcnodeid="311" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Count">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="313" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8700" top="9510" width="0" height="0">
+   <BOUNDS type="Node" left="8685" top="9465" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8700" top="9510" width="945" height="240">
+   <BOUNDS type="Box" left="8685" top="9465" width="945" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="200">
    </PIN>
@@ -437,7 +439,7 @@
    <NODE systemname="JsonData" filename="subpatches\JsonData.v4p" nodename="subpatches\JsonData.v4p" componentmode="Hidden" id="314">
    <BOUNDS type="Node" left="6450" top="7470" width="1215" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="795" top="525" width="13290" height="11370">
+   <BOUNDS type="Window" left="7455" top="615" width="13290" height="11370">
    </BOUNDS>
    <PIN pinname="pathFile" visible="1">
    </PIN>
@@ -445,6 +447,8 @@
    </PIN>
    <BOUNDS type="Box" left="6450" top="7470">
    </BOUNDS>
+   <PIN pinname="Refresh" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="206" srcpinname="title" dstnodeid="300" dstpinname="title">
    </LINK>
@@ -527,9 +531,9 @@
    <LINK srcnodeid="324" srcpinname="Y Output Value" dstnodeid="206" dstpinname="Video_Id">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="325" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="14040" top="900" width="0" height="0">
+   <BOUNDS type="Node" left="11865" top="1560" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="14040" top="900" width="675" height="585">
+   <BOUNDS type="Box" left="11865" top="1560" width="510" height="420">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -541,7 +545,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Refresh">
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -549,15 +553,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="325" srcpinname="Y Output Value" dstnodeid="314" dstpinname="Refresh" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="14040" y="4463">
+   <LINKPOINT x="11850" y="4718">
    </LINKPOINT>
-   <LINKPOINT x="7665" y="4463">
+   <LINKPOINT x="7665" y="4718">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="325" srcpinname="Y Output Value" dstnodeid="206" dstpinname="Refresh" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="14040" y="4463">
+   <LINKPOINT x="11865" y="4710">
    </LINKPOINT>
-   <LINKPOINT x="5925" y="4463">
+   <LINKPOINT x="5925" y="4710">
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="327">
@@ -774,7 +778,7 @@
    </LINK>
    <LINK srcnodeid="341" srcpinname="Short Filenames" dstnodeid="339" dstpinname="available videos">
    </LINK>
-   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="343">
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="343" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="4770" top="11640" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
@@ -786,22 +790,22 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="207" srcpinname="path (complete)" dstnodeid="343" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="7795" y="10988">
+   <LINK srcnodeid="207" srcpinname="path (complete)" dstnodeid="343" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7795" y="11058">
    </LINKPOINT>
-   <LINKPOINT x="4880" y="10988">
+   <LINKPOINT x="4880" y="11023">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="333" srcpinname="Output" dstnodeid="343" dstpinname="Index">
+   <LINK srcnodeid="333" srcpinname="Output" dstnodeid="343" dstpinname="Index" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="343" srcpinname="Output" dstnodeid="300" dstpinname="XYZ in">
+   <LINK srcnodeid="343" srcpinname="Output" dstnodeid="300" dstpinname="XYZ in" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="207" srcpinname="path (part)" dstnodeid="334" dstpinname="path (part)">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="344" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="9690" top="8475" width="1650" height="270">
+   <BOUNDS type="Node" left="9675" top="8280" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9690" top="8475" width="885" height="840">
+   <BOUNDS type="Box" left="9675" top="8280" width="885" height="840">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|get a part of the path|">
    </PIN>
@@ -813,9 +817,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="345" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="9660" top="9495" width="1650" height="270">
+   <BOUNDS type="Node" left="9645" top="9450" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9660" top="9495" width="1545" height="270">
+   <BOUNDS type="Box" left="9645" top="9450" width="1545" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|get a single position|">
    </PIN>
@@ -868,54 +872,22 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="349" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3570" top="12405" width="2730" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3570" top="12405" width="2730" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|get partitur contents from a xml file|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="325" srcpinname="Y Output Value" dstnodeid="339" dstpinname="Refresh" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="14040" y="2460">
+   <LINKPOINT x="11865" y="2708">
    </LINKPOINT>
-   <LINKPOINT x="4440" y="2460">
+   <LINKPOINT x="4440" y="2708">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="325" srcpinname="Y Output Value" dstnodeid="341" dstpinname="Update" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="14040" y="1980">
+   <LINKPOINT x="11865" y="2228">
    </LINKPOINT>
-   <LINKPOINT x="6300" y="1980">
+   <LINKPOINT x="6300" y="2228">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="325" srcpinname="Y Output Value" dstnodeid="300" dstpinname="Read" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="14025" y="6758">
-   </LINKPOINT>
-   <LINKPOINT x="4590" y="6758">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Subtract (String)" nodename="Subtract (String)" componentmode="Hidden" id="350">
-   <BOUNDS type="Node" left="7260" top="6645" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Operand 1" visible="1">
-   </PIN>
-   <PIN pinname="Operand 2" slicecount="1" values="/">
-   </PIN>
-   <PIN pinname="Result" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="314" srcpinname="pathFile" dstnodeid="350" dstpinname="Operand 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="364" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="17160" top="4110" width="0" height="0">
+   <BOUNDS type="Node" left="18060" top="4485" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="17160" top="4110" width="795" height="720">
+   <BOUNDS type="Box" left="18060" top="4485" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -933,9 +905,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="365" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="16725" top="5310" width="0" height="0">
+   <BOUNDS type="Node" left="17625" top="5685" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="16725" top="5310" width="795" height="720">
+   <BOUNDS type="Box" left="17625" top="5685" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -953,7 +925,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="366">
-   <BOUNDS type="Node" left="16575" top="6720" width="100" height="100">
+   <BOUNDS type="Node" left="17475" top="7095" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Translate XYZ" visible="1">
    </PIN>
@@ -967,9 +939,9 @@
    <LINK srcnodeid="365" srcpinname="Y Output Value" dstnodeid="366" dstpinname="Translate XYZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="369" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="18510" top="4155" width="0" height="0">
+   <BOUNDS type="Node" left="19410" top="4530" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="18510" top="4155" width="795" height="720">
+   <BOUNDS type="Box" left="19410" top="4530" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -987,9 +959,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="370" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="18105" top="3015" width="0" height="0">
+   <BOUNDS type="Node" left="19005" top="3390" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="18105" top="3015" width="795" height="720">
+   <BOUNDS type="Box" left="19005" top="3390" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1007,7 +979,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="371">
-   <BOUNDS type="Node" left="17925" top="6720" width="100" height="100">
+   <BOUNDS type="Node" left="18825" top="7095" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Translate XYZ" visible="1">
    </PIN>
@@ -1019,7 +991,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="374">
-   <BOUNDS type="Node" left="19275" top="6720" width="100" height="100">
+   <BOUNDS type="Node" left="20175" top="7095" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Translate XYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
@@ -1033,9 +1005,9 @@
    <LINK srcnodeid="369" srcpinname="Y Output Value" dstnodeid="371" dstpinname="Rotate XYZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="379" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="21015" top="3825" width="0" height="0">
+   <BOUNDS type="Node" left="21915" top="4200" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="21015" top="3825" width="795" height="720">
+   <BOUNDS type="Box" left="21915" top="4200" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1053,9 +1025,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="380" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="19890" top="4080" width="0" height="0">
+   <BOUNDS type="Node" left="20790" top="4455" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="19890" top="4080" width="795" height="720">
+   <BOUNDS type="Box" left="20790" top="4455" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1085,17 +1057,17 @@
    </PIN>
    <PIN pinname="Shift Y" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Projector Width" slicecount="1" values="0.02">
+   <PIN pinname="Projector Width" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Projector Height" slicecount="1" values="0.01">
+   <PIN pinname="Projector Height" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Projector Depth" slicecount="1" values="0.01">
+   <PIN pinname="Projector Depth" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Lens Radius" slicecount="1" values="0.01">
+   <PIN pinname="Lens Radius" slicecount="1" values="0.2">
    </PIN>
-   <PIN pinname="Lens Depth" slicecount="1" values="0.01">
+   <PIN pinname="Lens Depth" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Lens Position" slicecount="1" values="0.01">
+   <PIN pinname="Lens Position" slicecount="1" values="0">
    </PIN>
    <PIN pinname="View" visible="1">
    </PIN>
@@ -1105,7 +1077,7 @@
    </PIN>
    <PIN pinname="Image Width On Lens" slicecount="1" values="0.01">
    </PIN>
-   <PIN pinname="Show Helpers" slicecount="1" values="0" visible="1">
+   <PIN pinname="Show Helpers" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="16:9" slicecount="1" values="1">
    </PIN>
@@ -1115,9 +1087,11 @@
    </PIN>
    <PIN pinname="Near" slicecount="1" values="0.01">
    </PIN>
+   <BOUNDS type="Window" left="3600" top="3240" width="13575" height="8640">
+   </BOUNDS>
    </NODE>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="391">
-   <BOUNDS type="Node" left="17910" top="7530" width="100" height="100">
+   <BOUNDS type="Node" left="18810" top="7905" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -1135,7 +1109,7 @@
    <LINK srcnodeid="371" srcpinname="Transform Out" dstnodeid="391" dstpinname="Transform In">
    </LINK>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="394">
-   <BOUNDS type="Node" left="16680" top="7200" width="100" height="100">
+   <BOUNDS type="Node" left="17580" top="7575" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -1157,7 +1131,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14055" top="9600" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.37">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.35">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1191,7 +1165,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1200,8 +1174,6 @@
    </LINK>
    <LINK srcnodeid="390" srcpinname="View" dstnodeid="399" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="399" dstpinname="Switch">
-   </LINK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="400">
    <BOUNDS type="Node" left="13905" top="16125" width="100" height="100">
    </BOUNDS>
@@ -1209,13 +1181,11 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="400" dstpinname="Switch">
-   </LINK>
    <LINK srcnodeid="210" srcpinname="Projection" dstnodeid="400" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="390" srcpinname="Projection" dstnodeid="400" dstpinname="Input 2">
@@ -1224,30 +1194,12 @@
    </LINK>
    <LINK srcnodeid="399" srcpinname="Output" dstnodeid="199" dstpinname="View">
    </LINK>
-   <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="403">
-   <BOUNDS type="Node" left="17910" top="8115" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Y" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Z" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="X" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="391" srcpinname="Transform Out" dstnodeid="403" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="403" srcpinname="Transform Out" dstnodeid="390" dstpinname="Transform">
-   </LINK>
    <LINK srcnodeid="334" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="196" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 3">
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="404" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="9255" top="7545" width="100" height="100">
+   <BOUNDS type="Node" left="8835" top="7530" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1285,7 +1237,7 @@
    <LINK srcnodeid="284" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Frac (Value)" nodename="Frac (Value)" componentmode="Hidden" id="405" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="8850" top="8115" width="100" height="100">
+   <BOUNDS type="Node" left="8835" top="7920" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1310,22 +1262,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="407" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="10020" top="15825" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="407" dstpinname="Input" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="407" srcpinname="Output" dstnodeid="390" dstpinname="Show Helpers" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="408" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="17580" top="2085" width="870" height="270">
+   <BOUNDS type="Node" left="19155" top="7500" width="870" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="17580" top="2085" width="870" height="270">
+   <BOUNDS type="Box" left="19155" top="7500" width="870" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|3 cameras|">
    </PIN>
@@ -1344,6 +1284,250 @@
    </LINK>
    <LINK srcnodeid="314" srcpinname="pathFile" dstnodeid="318" dstpinname="Input 3">
    </LINK>
-   <LINK srcnodeid="318" srcpinname="Output" dstnodeid="207" dstpinname="Filename">
+   <LINK srcnodeid="318" srcpinname="Output" dstnodeid="207" dstpinname="Filename" linkstyle="Bezier">
+   <LINKPOINT x="6765" y="9555">
+   </LINKPOINT>
+   <LINKPOINT x="7845" y="9555">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="409" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11865" top="4350" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11865" top="4350" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="409" srcpinname="Y Output Value" dstnodeid="334" dstpinname="refresh" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11865" y="8160">
+   </LINKPOINT>
+   <LINKPOINT x="7455" y="8160">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="410" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12405" top="4245" width="1560" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12405" top="4245" width="1560" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|refresh path display|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="411" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11865" top="3735" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11865" top="3735" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="411" srcpinname="Y Output Value" dstnodeid="207" dstpinname="refresh" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11865" y="7208">
+   </LINKPOINT>
+   <LINKPOINT x="8310" y="7208">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="412" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12345" top="3675" width="1530" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12345" top="3675" width="1530" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|refresh path parser|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="413" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="13140" top="8700" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13140" top="8700" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Show Helpers|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="413" srcpinname="Y Output Value" dstnodeid="390" dstpinname="Show Helpers">
+   </LINK>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="415">
+   <BOUNDS type="Node" left="5925" top="5475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="327" srcpinname="Y Output Value" dstnodeid="415" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="340" srcpinname="Output String" dstnodeid="415" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="414">
+   <BOUNDS type="Node" left="5925" top="5895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="415" srcpinname="Output" dstnodeid="414" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="330" srcpinname="Output" dstnodeid="414" dstpinname="Set">
+   </LINK>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="418" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="10560" top="11535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Folder" slicecount="1" values="CurrentPatch">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="417" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="10560" top="11850" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="videos\final\">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="418" srcpinname="Output" dstnodeid="417" dstpinname="Input 1" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="414" srcpinname="Output" dstnodeid="417" dstpinname="Input 3" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="5985" y="9000">
+   </LINKPOINT>
+   <LINKPOINT x="10905" y="9000">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="417" srcpinname="Output" dstnodeid="302" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="399" dstpinname="Switch" linkstyle="Bezier">
+   <LINKPOINT x="10200" y="15848">
+   </LINKPOINT>
+   <LINKPOINT x="12945" y="15848">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="400" dstpinname="Switch" linkstyle="Bezier">
+   <LINKPOINT x="10200" y="15848">
+   </LINKPOINT>
+   <LINKPOINT x="13905" y="15848">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="420" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12465" top="1575" width="1530" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12465" top="1575" width="1530" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|refresh json|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="422" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11865" top="2610" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11865" top="2610" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="421" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12345" top="2625" width="1530" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12345" top="2625" width="1530" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|refresh partitur|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="422" srcpinname="Y Output Value" dstnodeid="300" dstpinname="Read" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="11850" y="7560">
+   </LINKPOINT>
+   <LINKPOINT x="4590" y="7560">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="423" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="18840" top="8925" width="2295" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18840" top="8925" width="2295" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|here we use the center camera|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="391" srcpinname="Transform Out" dstnodeid="390" dstpinname="Transform" linkstyle="Bezier">
+   <LINKPOINT x="18810" y="9338">
+   </LINKPOINT>
+   <LINKPOINT x="13350" y="9338">
+   </LINKPOINT>
    </LINK>
    </PATCH>
