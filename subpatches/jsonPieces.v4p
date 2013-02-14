@@ -17,6 +17,8 @@
    </PIN>
    <PIN pinname="Output json" visible="1">
    </PIN>
+   <PIN pinname="Go" slicecount="1" values="0" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="JsonArray (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="420" top="7020" width="100" height="100">
@@ -511,7 +513,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   <PIN pinname="Descriptive Name" slicecount="1" values="ids">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="16">
    </PIN>
@@ -621,5 +623,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="status" dstnodeid="92" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Success" dstnodeid="3" dstpinname="Go">
    </LINK>
    </PATCH>

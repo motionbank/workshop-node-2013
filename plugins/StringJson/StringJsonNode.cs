@@ -25,6 +25,9 @@ namespace VVVV.Nodes
 		[Input("JSON", DefaultString = "hello")]
 		IDiffSpread<string> FInput;
 		
+		[Input("Go", IsBang=true, IsSingle=true)]
+		IDiffSpread<bool> FGo;
+		
 		[Output("Output json")]
 		ISpread<JObject> FJOutput;
 		
@@ -41,7 +44,7 @@ namespace VVVV.Nodes
 			FJOutput.SliceCount = SpreadMax;
 			FStatus.SliceCount = SpreadMax;
 			
-			if(FInput.SliceCount != 0)
+			if(FInput.SliceCount != 0 && FGo[0]==true)
 			{
 				for(int i=0; i< SpreadMax; i++)
 				{
