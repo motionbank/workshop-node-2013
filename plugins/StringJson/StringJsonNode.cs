@@ -28,6 +28,9 @@ namespace VVVV.Nodes
 		[Output("Output json")]
 		ISpread<JObject> FJOutput;
 		
+		[Output("status")]
+		ISpread<string> FStatus;
+		
 		[Import()]
 		ILogger FLogger;
 		#endregion fields & pins
@@ -36,10 +39,23 @@ namespace VVVV.Nodes
 		public void Evaluate(int SpreadMax)
 		{
 			FJOutput.SliceCount = SpreadMax;
-			if(FInput.IsChanged )
+			FStatus.SliceCount = SpreadMax;
+			
+			if(FInput.SliceCount != 0)
 			{
-				FJOutput[0] = JObject.Parse(FInput[0]);
-//				FJOutput.SliceCount = 1;
+				for(int i=0; i< SpreadMax; i++)
+				{
+					try
+					{
+						FJOutput[i] = JObject.Parse(FInput[i]);
+						FStatus[i] = "ok";
+					}
+					catch(Exception e)
+					{
+						FStatus[i] = "error";
+					}
+					
+				}
 			}
 		}
 	}
@@ -88,7 +104,7 @@ namespace VVVV.Nodes
 	{
 		#region fields & pins
 		[Input("Jobject")]
-		ISpread<JObject> FInput;
+		IDiffSpread<JObject> FInput;
 		
 		[Input("path")]
 		ISpread<string> FInputp;
@@ -109,34 +125,47 @@ namespace VVVV.Nodes
 		
 		public void Evaluate(int SpreadMax)
 		{
-			int i = 0;
-			FcOutput.SliceCount = 1;
-			if( FInput[0]!=null)
+			
+			FcOutput.SliceCount = SpreadMax;
+			
+			if(FInput.SliceCount != 0)
 			{
-				if( FInput[0].SelectToken(FInputp[i])!= null  )
+				int i = 0;
+				int divider = 1;
+				
+				for(int j=0; j< SpreadMax; j++)
 				{
-					var results  = FInput[0].SelectToken(FInputp[i]);
-					foreach (JToken child in results.Children())
+					
+					if( FInput[j]!=null)
 					{
-						if( child.SelectToken(FInputk[0])!= null )
+						if( FInput[j].SelectToken(FInputp[0])!= null  )
 						{
-							FOutput[i] = child.SelectToken(FInputk[0]).ToString();
+							var results  = FInput[j].SelectToken(FInputp[0]);
+							foreach (JToken child in results.Children())
+							{
+								if( child.SelectToken(FInputk[0])!= null )
+								{
+									FOutput[i] = child.SelectToken(FInputk[0]).ToString();
+								}
+								else
+								{
+									FOutput[i] = "";
+								}
+								i++;
+							}
+							FOutput.SliceCount = i;
+							FcOutput[j] = i / divider;
 						}
-						else
-						{
-							FOutput[i] = "";
-						}
-						i++;
 					}
-					FOutput.SliceCount = i;
-					FcOutput[0] = i;
+					else
+					{
+						FOutput.SliceCount = 1;
+						FcOutput[0] = 0;
+						FOutput[i]= "";
+					}
+					divider += 1;
+					
 				}
-			}
-			else
-			{
-				FOutput.SliceCount = 1;
-				FcOutput[0] = 0;
-				FOutput[i]= "";
 			}
 		}
 	}
