@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8670" top="12795" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="600" top="2820" width="9810" height="8415">
+   <BOUNDS type="Window" left="810" top="2190" width="9810" height="8415">
    </BOUNDS>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -321,7 +321,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9645" top="11610" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="300">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -339,7 +339,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9150" top="12210" width="285" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -351,7 +351,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="play">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="307" srcpinname="Y Output Value" dstnodeid="196" dstpinname="play">
@@ -654,7 +654,7 @@
    </LINK>
    <LINK srcnodeid="320" srcpinname="Output" dstnodeid="333" dstpinname="Input">
    </LINK>
-   <NODE systemname="drawPath" filename="subpatches\drawPath.v4p" nodename="subpatches\drawPath.v4p" componentmode="InAWindow" id="334" debug="0">
+   <NODE systemname="drawPath" filename="subpatches\drawPath.v4p" nodename="subpatches\drawPath.v4p" componentmode="Hidden" id="334" debug="0">
    <BOUNDS type="Node" left="6975" top="11490" width="930" height="270">
    </BOUNDS>
    <PIN pinname="Input - XYZ" visible="1">
@@ -1157,7 +1157,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14055" top="9600" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.3">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.37">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1179,9 +1179,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="399">
@@ -1203,7 +1203,7 @@
    <LINK srcnodeid="398" srcpinname="Y Output Value" dstnodeid="399" dstpinname="Switch">
    </LINK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="400">
-   <BOUNDS type="Node" left="13920" top="16125" width="100" height="100">
+   <BOUNDS type="Node" left="13905" top="16125" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1231,7 +1231,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="-1.5">
+   <PIN pinname="Y" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Z" slicecount="1" values="0">
    </PIN>
@@ -1279,6 +1279,8 @@
    <LINK srcnodeid="303" srcpinname="Y Output Value" dstnodeid="404" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="390" srcpinname="Cone Source" dstnodeid="196" dstpinname="Input - XYZ">
+   <LINKPOINT x="8700" y="11475">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="284" srcpinname="Layer" dstnodeid="198" dstpinname="Layer 1">
    </LINK>

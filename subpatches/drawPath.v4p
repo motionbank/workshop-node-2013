@@ -104,7 +104,7 @@
    </LINK>
    <LINK dstnodeid="10" dstpinname="Blue" srcnodeid="0" srcpinname="Z">
    </LINK>
-   <BOUNDS type="Window" left="3915" top="1125" width="14235" height="10575">
+   <BOUNDS type="Window" left="0" top="0" width="10155" height="11235">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="Spline (EX9 Mesh).v4p" id="12" nodename="Spline (EX9 Mesh)" systemname="Spline (EX9 Mesh)">
    <BOUNDS height="270" left="3315" top="7185" type="Node" width="1365">
@@ -615,7 +615,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2100" top="1980" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="9.15">
+   <PIN pinname="Y Input Value" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
