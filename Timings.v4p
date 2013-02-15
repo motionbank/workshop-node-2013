@@ -244,20 +244,6 @@
    </NODE>
    <LINK srcnodeid="342" srcpinname="Output String" dstnodeid="341" dstpinname="Directory">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="347" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5715" top="1395" width="3045" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5715" top="1395" width="3045" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|parse the contents of the video directory|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="348" systemname="IOBox (String)">
    <BOUNDS type="Node" left="9105" top="2535" width="2910" height="270">
    </BOUNDS>
