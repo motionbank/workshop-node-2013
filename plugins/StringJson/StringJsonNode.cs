@@ -107,13 +107,16 @@ namespace VVVV.Nodes
 	{
 		#region fields & pins
 		[Input("Jobject")]
-		IDiffSpread<JObject> FInput;
+		ISpread<JObject> FInput;
 		
-		[Input("path")]
-		ISpread<string> FInputp;
+		[Input("path", IsSingle=true)]
+		ISpread<string> FInputPath;
 		
-		[Input("key")]
-		ISpread<string> FInputk;
+		[Input("key", IsSingle=true)]
+		ISpread<string> FInputKey;
+		
+		[Input("Debug", IsBang=true, IsSingle=true)]
+		IDiffSpread<bool> FDebug;
 		
 		[Output("Output")]
 		ISpread<string> FOutput;
@@ -128,46 +131,59 @@ namespace VVVV.Nodes
 		
 		public void Evaluate(int SpreadMax)
 		{
-			
 			FcOutput.SliceCount = SpreadMax;
+			FOutput.SliceCount = 0;
 			
 			if(FInput.SliceCount != 0)
 			{
 				int i = 0;
-				int divider = 1;
+				int count = 0;
 				
-				for(int j=0; j< SpreadMax; j++)
+				for(int j=0; j < SpreadMax; j++)
 				{
+					if(FDebug[0])FLogger.Log(LogType.Debug, "go " + j );
 					
-					if( FInput[j]!=null)
+					if( FInput[j] != null)
 					{
-						if( FInput[j].SelectToken(FInputp[0])!= null  )
+						if(FDebug[0])FLogger.Log(LogType.Debug, "valid Json " + j);
+						
+						if( FInput[j].SelectToken(FInputPath[0]) != null  )
 						{
-							var results  = FInput[j].SelectToken(FInputp[0]);
+							var results  = FInput[j].SelectToken(FInputPath[0]); 
+							
+							if(FDebug[0])FLogger.Log(LogType.Debug, "valid " + FInputPath[0]);
+ 							
 							foreach (JToken child in results.Children())
 							{
-								if( child.SelectToken(FInputk[0])!= null )
+								// one more result
+								FOutput.SliceCount += 1;
+							
+								if( child.SelectToken(FInputKey[0]) != null ) 
 								{
-									FOutput[i] = child.SelectToken(FInputk[0]).ToString();
+									if(FDebug[0])FLogger.Log(LogType.Debug, (i*(j+1)) + " / " + count + " result child: " + i + " - " + child.SelectToken(FInputKey[0]).ToString().Substring(6));
+									FOutput[count] = child.SelectToken(FInputKey[0]).ToString(); 
 								}
 								else
 								{
-									FOutput[i] = "";
+									FOutput[count] = "empty";
 								}
 								i++;
+								count++;
 							}
-							FOutput.SliceCount = i;
-							FcOutput[j] = i / divider;
+							FcOutput[j] = i;
 						}
+						
+						
 					}
 					else
 					{
 						FOutput.SliceCount = 1;
 						FcOutput[0] = 0;
-						FOutput[i]= "";
+						FOutput[i]= "empt";
 					}
-					divider += 1;
-					
+
+					i = 0;
+					if(FDebug[0])FLogger.Log(LogType.Debug, "----------------");
 				}
 			}
 		}

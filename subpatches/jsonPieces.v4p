@@ -17,7 +17,7 @@
    </PIN>
    <PIN pinname="Output json" visible="1">
    </PIN>
-   <PIN pinname="Go" slicecount="1" values="0" visible="1">
+   <PIN pinname="Go" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="JsonArray (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="JsonArray (JSON)" componentmode="Hidden" id="4">
@@ -25,9 +25,9 @@
    </BOUNDS>
    <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="key" visible="1">
+   <PIN pinname="key" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="path" visible="1">
+   <PIN pinname="path" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -35,9 +35,9 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="7">
-   <BOUNDS type="Node" left="5250" top="4590" width="100" height="100">
+   <BOUNDS type="Node" left="2310" top="4920" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5250" top="4590" width="750" height="300">
+   <BOUNDS type="Box" left="2310" top="4920" width="750" height="300">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" encoded="0" values="videos">
    </PIN>
@@ -51,9 +51,9 @@
    </BOUNDS>
    <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="key" visible="1">
+   <PIN pinname="key" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="path" visible="1">
+   <PIN pinname="path" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -109,17 +109,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="4" dstpinname="path" linkstyle="Bezier">
-   <LINKPOINT x="5250" y="5990">
+   <LINKPOINT x="2295" y="6113">
    </LINKPOINT>
-   <LINKPOINT x="945" y="5890">
+   <LINKPOINT x="795" y="6113">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="4" dstpinname="key">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="8" dstpinname="path" linkstyle="Bezier">
-   <LINKPOINT x="5250" y="6005">
+   <LINKPOINT x="2370" y="6113">
    </LINKPOINT>
-   <LINKPOINT x="3870" y="5905">
+   <LINKPOINT x="3675" y="6113">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="8" dstpinname="key">
@@ -267,9 +267,9 @@
    </BOUNDS>
    <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="key" visible="1">
+   <PIN pinname="key" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="path" visible="1">
+   <PIN pinname="path" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -325,9 +325,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="26" dstpinname="path" linkstyle="Bezier">
-   <LINKPOINT x="5310" y="6005">
+   <LINKPOINT x="2370" y="6105">
    </LINKPOINT>
-   <LINKPOINT x="6525" y="5905">
+   <LINKPOINT x="6375" y="6105">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output String" dstnodeid="26" dstpinname="key">
@@ -574,8 +574,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="22" srcpinname="Body" dstnodeid="88" dstpinname="Input">
-   </LINK>
    <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="90" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="4620" top="3555" width="100" height="100">
    </BOUNDS>
@@ -593,7 +591,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="91" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="5475" top="3330" width="100" height="100">
+   <BOUNDS type="Node" left="5475" top="3330" width="660" height="270">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -624,6 +622,140 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="status" dstnodeid="92" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="22" srcpinname="Success" dstnodeid="3" dstpinname="Go">
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="5055" top="3945" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="3" dstpinname="Go">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Success" dstnodeid="94" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="94" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="14181" top="5820" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14181" top="5820" width="1965" height="5655">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1" encoded="0">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="23">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="100" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="12180" top="5775" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12180" top="5775" width="1830" height="5730">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="23" encoded="0" visible="1" values="created_at,created_by,description,dur,duration,event_type,happened_at,happened_at_float,highlighted,id,inherits_title,location,locked,modified_by,parent_id,performers,piece_id,rating,state,title,updated_at,video_id,created_at">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="23">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SelectToken (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="SelectToken (JSON)" componentmode="Hidden" id="99" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="14166" top="5130" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JObject" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="path" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="14166" top="5130">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="101" dstpinname="Input String" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="98" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15246" top="4680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" values="events[">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values="].">
+   </PIN>
+   <PIN pinname="Input 4" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="97" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15396" top="3960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="SubType" slicecount="1" values="|Integer (0 .. MaxInt)|">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="96" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15396" top="3360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15396" top="3360" width="690" height="570">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Input" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="98" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Output" dstnodeid="99" dstpinname="path" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Output String" dstnodeid="98" dstpinname="Input 4" hiddenwhenlocked="1">
+   <LINKPOINT x="12006" y="11265">
+   </LINKPOINT>
+   <LINKPOINT x="12006" y="4680">
+   </LINKPOINT>
+   <LINKPOINT x="12246" y="4440">
+   </LINKPOINT>
+   <LINKPOINT x="15516" y="4440">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="95" systemname="IOBox (String)" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="16131" top="3300" width="1680" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16131" top="3300" width="735" height="690">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|inspect one event|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output json" dstnodeid="99" dstpinname="JObject">
+   <LINKPOINT x="14130" y="4845">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Body" dstnodeid="88" dstpinname="Input">
    </LINK>
    </PATCH>
