@@ -301,7 +301,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10560" top="12225" width="2985" height="255">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="videos\final\D02T02_Ros_sync_Center.mp4" visible="1">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="videos\final\D02T02_Ros_sync_Center.mp4">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.avi">
    </PIN>
@@ -1343,6 +1343,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="411" srcpinname="Y Output Value" dstnodeid="207" dstpinname="refresh" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="11865" y="7208">
@@ -1488,6 +1490,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="421" systemname="IOBox (String)">

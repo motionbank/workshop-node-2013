@@ -211,7 +211,7 @@
    </BOUNDS>
    <PIN pinname="Set" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -321,8 +321,6 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="0" srcpinname="Position" dstnodeid="45" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="34" dstpinname="Input">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="46">
    <BOUNDS type="Node" left="5085" top="4020" width="100" height="100">
@@ -481,5 +479,17 @@
    <LINK srcnodeid="60" srcpinname="Output" dstnodeid="50" dstpinname="Translate XYZ">
    </LINK>
    <LINK srcnodeid="50" srcpinname="Transform Out" dstnodeid="51" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="61">
+   <BOUNDS type="Node" left="2730" top="4800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="61" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="34" dstpinname="Input">
    </LINK>
    </PATCH>

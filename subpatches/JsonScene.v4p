@@ -47,6 +47,8 @@
    </PIN>
    <PIN pinname="Output json" visible="1">
    </PIN>
+   <PIN pinname="Go" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="SelectToken (JSON)" filename="..\plugins\StringJson\StringJson.csproj" nodename="SelectToken (JSON)" componentmode="Hidden" id="5" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="11460" top="7410" width="100" height="100">
@@ -140,7 +142,7 @@
    </NODE>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="0" dstpinname="Input String" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="4590" top="705" width="15105" height="11370">
+   <BOUNDS type="Window" left="255" top="465" width="15105" height="11370">
    </BOUNDS>
    <NODE systemname="HTTP (Network Get String)" nodename="HTTP (Network Get)" componentmode="Hidden" id="22" filename="%VVVV%\lib\nodes\modules\Network\HTTP (Network Get String).v4p">
    <BOUNDS type="Node" left="3195" top="3795" width="100" height="100">
@@ -623,6 +625,8 @@
    </BOUNDS>
    <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Debug" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="92" dstpinname="path" linkstyle="Bezier">
    <LINKPOINT x="5535" y="7800">
@@ -753,5 +757,21 @@
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="16" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Output String" dstnodeid="101" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="4965" top="5985" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Success" dstnodeid="102" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="3" dstpinname="Go">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Output" dstnodeid="102" dstpinname="Input 2">
    </LINK>
    </PATCH>

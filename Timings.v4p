@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5115" top="9630" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="15720" top="0" width="5880" height="3960">
+   <BOUNDS type="Window" left="13545" top="0" width="8055" height="5550">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -390,4 +390,32 @@
    </LINK>
    <LINK srcnodeid="314" srcpinname="startTimePath" dstnodeid="485" dstpinname="startTime">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="486" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="210" top="4680" width="1140" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="210" top="4680" width="1140" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="e10-stock3-af">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="487" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="195" top="4395" width="1155" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="195" top="4395" width="1155" height="255">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|wifi password:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
