@@ -27,3 +27,9 @@ http://sdcp-nttf-node13.herokuapp.com/video/index/3
 All data that you can access through the API or V4 patches is free to use but NOT TO BE RE-DISTRIBUTED. Please get in touch if you plan to do so: florian[-AT-]motionbank.org
 
 Please make sure to credit Motion Bank (motionbank.org) when publizising any material (images, movies, ...) generated from the data.
+
+----
+
+Motion Bank is a project of The Forsythe Company, Germany
+http://theforsythecompany.com/
+http://motionbank.org/
